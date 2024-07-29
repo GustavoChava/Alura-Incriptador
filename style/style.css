@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+body{
+    background-color: #F3F5FC;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    height: auto;
+    font-family: "Inter", sans-serif;
+}
+
+/*-----TEXTAREA*/
+.ingtext {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #0A3871 !important;
+}
+
+.ingtext .logo {
+    width: 15% !important;
+}
+
+.logo g {
+    fill: #0A3871;
+}
+
+.ingtext .textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    width: 85%;
+}
+
+textarea {
+    border: 0;
+    border-radius: 15px;
+    width: 100%;
+    height: 30rem;
+    /* fill: #0A3871; */
+    color: #0A3871 !important;
+    background-color: transparent;
+    border: none;
+    resize: none;
+    font-size: 16px;
+    padding: 10px;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 15px;
+}
+
+textarea::placeholder {
+    color: #0A3871 !important;
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+}
+
+.textarea div {
+    padding-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.span {
+    width: 80% !important;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    color:#495057 !important;
+}
+
+.span img {
+    width: 3%;
+    padding-right: 0.5rem;
+}
+
+.btn {
+    width: 80% !important;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+}
+
+button {
+    width: 40%;
+    padding: 1rem;
+    border: solid 0.1rem;
+    border-radius: 1rem;
+    border-color: #0A3871;
+    color: #ffff;
+    background-color: #0A3871;
+}
+
+.btn-descriptar {
+    background-color: #D8DFE8 !important;
+    color: #0A3871 !important;
+}
+
+.btn-encriptar:hover {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    cursor: pointer;
+}
+
+.btn-descriptar:hover {
+    background-color: #0A3871 !important;
+    color: #ffff !important;
+    cursor: pointer;
+}
+
+
+/*-----MOSTRAR TEXTO*/
+.textincrip {
+    background-color: #FFFFFF;
+    width: 30%;
+    /*height: 100%;*/
+    color: #0A3871;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mensaje {
+    /*display: none;*/
+}
+
+.txt-incriptado {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+
+img {
+    width: 50%;
+}
+
+.btn-copiar {
+    background-color: #D8DFE8 !important;
+    color: #0A3871 !important;
+}
+
+
+.btn-copiar:hover {
+    background-color: #0A3871 !important;
+    color: #ffff !important;
+    cursor: pointer;
+}
+
+/*------ESTILOS PARA PANTALLAS PEQUEÑAS-------*/
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+
+    .ingtext {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        flex-direction: column !important;
+    }
+
+    .btn button{
+        width: 100%;
+        margin: 0.5rem;
+    }
+
+    /**/
+    .textincrip {
+        width: 100%;
+    }
+}
+
+/*------ESTILOS PARA PANTALLAS mediana-------*/
+@media (max-width: 1024px) {
+    body {
+        flex-direction: column;
+    }
+
+    .ingtext {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .textarea {
+        height: 90% !important;
+    }
+
+    .btn {
+        flex-direction: column !important;
+    }
+
+    .btn button{
+        width: 100%;
+        margin: 0.5rem;
+    }
+
+    /**/
+    .textincrip {
+        width: 100%;
+        height: auto;
+    }
+
+    .mensaje div {
+        display: none;
+    }
+}
