@@ -1,9 +1,9 @@
 function esMinusculas (texto){
-    return /^[a-z0-9\s.,;:!?()'"-]*$/m.test(texto)
+    return /^[a-záéíóúÁÉÍÓÚ0-9\s.,;:!?()'"-]*$/m.test(texto)
 }
 
 function sinAcentos (texto){
-    return !/[áéíóúÁÉÍÓÚ]/.test(texto)
+    return /[áéíóúÁÉÍÓÚ]/.test(texto)
 }
 
 function encriptarTexto (texto){
@@ -71,7 +71,7 @@ function mostrarTexto (opcion) {
     var text = texto.value
     let textencriptado = ''
 
-    if (!esMinusculas(text) && sinAcentos(text)) {
+    if (!esMinusculas(text)) {
         alert("El texto solo debe contener letras minúsculas sin acentos.");
         document.getElementById("texto-encriptar").value = "";
     }else {
