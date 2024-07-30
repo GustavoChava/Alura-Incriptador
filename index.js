@@ -3,7 +3,7 @@ function esMinusculas (texto){
 }
 
 function sinAcentos (texto){
-    return !/[áéíóúÁÉÍÓÚ]/.test(texto)
+    return !/[áéíóú]/.test(texto);
 }
 
 function encriptarTexto (texto){
@@ -71,7 +71,7 @@ function mostrarTexto (opcion) {
     var text = texto.value
     let textencriptado = ''
 
-    if (!esMinusculas(text) || !sinAcentos(text)) {
+    if (!esMinusculas(text) || sinAcentos(text)) {
         alert("El texto solo debe contener letras minúsculas sin acentos.");
         document.getElementById("texto-encriptar").value = "";
     }else {
